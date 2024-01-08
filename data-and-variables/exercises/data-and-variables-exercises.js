@@ -8,11 +8,11 @@ let mpk = 0.621;
 
 // Use console.log to print the 'typeof' each variable. Print one item per line.
 
-/* console.log(typeof(spaceShuttle));
+console.log(typeof(spaceShuttle));
 console.log(typeof(shuttleSpeedMph));
 console.log(typeof(distanceToMarsKm));
 console.log(typeof(distanceToMoonKm));
-console.log(typeof(mpk)); */
+console.log(typeof(mpk));
 
 // Calculate a space mission below
 
