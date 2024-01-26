@@ -84,6 +84,8 @@ let orgString = "candlestick";
 console.log(`We put the '${orgString}' in the '${funPhrase(orgString)}'.`);
 
 function areaOfRectangle(length, width) {
+    let area = 0;
+
     if (width === undefined) {
         area = length * length;
     } else {
