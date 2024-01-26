@@ -71,3 +71,25 @@ console.log(reverseArray(arrayTest3));
 // 3. Call your area function by passing in two arguments - the length and width.
 // 4. If only one argument is passed to the function, then the shape is a square. Modify your code to deal with this case.
 // 5. Use a template literal to print, “The area is ____ cm^2.”
+
+function funPhrase(input) {
+    if (input.length <= 3) {
+        return input.slice(-1, input.length);
+    } else {
+        return input.slice(0, 3);
+    }
+}
+
+let orgString = "candlestick";
+console.log(`We put the '${orgString}' in the '${funPhrase(orgString)}'.`);
+
+function areaOfRectangle(length, width) {
+    if (width === undefined) {
+        area = length * length;
+    } else {
+        area = length * width;
+    }
+    return area;
+}
+
+console.log(`The area is ${areaOfRectangle(3)} cm^2.`);
