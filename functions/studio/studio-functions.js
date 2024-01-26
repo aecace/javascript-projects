@@ -80,8 +80,10 @@ function funPhrase(input) {
     }
 }
 
-let orgString = "candlestick";
-console.log(`We put the '${orgString}' in the '${funPhrase(orgString)}'.`);
+let orgString = 'Functions rock!';
+console.log(`We put the '${funPhrase(orgString)}' in the '${orgString}'.`);
+
+
 
 function areaOfRectangle(length, width) {
     let area = 0;
