@@ -3,6 +3,18 @@
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+
+function reverseCharacters(string) {
+    if ((typeof string) === 'string') {
+        string = string.split('').reverse().join('');
+    } else if ((typeof string) === 'number') {
+        string = Number(string.toString().split('').reverse().join(''));
+    }
+    return string;
+}
+
+console.log(reverseCharacters(1234));
+
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
 // 4. Below the function, define and initialize a variable to hold a string.
@@ -29,6 +41,16 @@
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+
+function reverseArray(array) {
+    let reversedArray = [];
+    for (let i = 0; i < array.length; i++) {
+        reversedArray[array.length - i - 1] = reverseCharacters(array[i]);
+    }
+    return reversedArray
+}
+
+console.log(reverseArray(arrayTest3));
 
 // Bonus Missions
 
