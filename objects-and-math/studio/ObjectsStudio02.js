@@ -21,7 +21,8 @@ function randomSelection(array){
 // Code your oxygenExpended function here:
 
 function oxygenExpended(name) {
-  return Math.round(name.o2Used(totalTime)*100)/100;
+  let oxygenLevel = Math.round(name.o2Used(totalTime)*100)/100;
+  return `${selectedCrewMember.name} will perform the spacewalk, which will last ${totalTime} hours and require ${oxygenLevel} kg of oxygen.`;
 }
 
 // Candidate data & crew array.
@@ -69,6 +70,8 @@ let candidateA = {
  };
  
  let crew = [candidateA,candidateC,candidateE];
+
+ //my code
  const numberOrbits = 3;
  const orbitRadius = 2000;
  const orbitSpeed = 28000;
@@ -77,4 +80,4 @@ let candidateA = {
  let totalTime = missionDuration(numberOrbits, orbitRadius, orbitSpeed);
  
  console.log(`'The mission will travel ${orbitCircumference(orbitRadius)} km around the planet, and it will take ${totalTime} hours to complete.'`);
- console.log(`${selectedCrewMember.name} will perform the spacewalk, which will last ${totalTime} hours and require ${oxygenExpended(selectedCrewMember)} kg of oxygen.`);
+ console.log(oxygenExpended(selectedCrewMember));
