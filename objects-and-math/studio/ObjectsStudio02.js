@@ -21,7 +21,7 @@ function randomSelection(array){
 // Code your oxygenExpended function here:
 
 function oxygenExpended(name) {
-  let oxygenLevel = Math.round(name.o2Used(totalTime)*100)/100;
+  let oxygenLevel = Math.round(name.o2Used(totalTime)*1000)/1000;
   return `${selectedCrewMember.name} will perform the spacewalk, which will last ${totalTime} hours and require ${oxygenLevel} kg of oxygen.`;
 }
 
