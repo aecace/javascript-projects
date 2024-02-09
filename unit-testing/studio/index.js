@@ -2,9 +2,9 @@
 let launchcode = {
   organization: "nonprofit",
   executiveDirector: "Jeff",
-  percentageCoolEmployee: 100,
-  programOffered: ["Web Development", "Data Analysis", "Liftoff"],
-  launchOutput: function(number) {
+  percentageCoolEmployees: 100,
+  programsOffered: ["Web Development", "Data Analysis", "Liftoff"],
+  launchOutput: function(num) {
     let output = '';
     if (num % 2 === 0) {
         output += 'Launch';
@@ -14,7 +14,7 @@ let launchcode = {
     }
     if (num % 5 === 0) {
         if (output) {
-            output += 'Rocks';
+            output += ' Rocks';
         } else {
             output += 'Rocks';
         }
@@ -22,7 +22,7 @@ let launchcode = {
     if (!output) {
         return `Rutabagas! That doesn't work.`;
     } else if (output === 'Launch Rocks') {
-        return output + ' ! Smack!!!!';
+        return output + '! (CRASH!!!!)';
     } else {
         return output + '!';
     }
